@@ -1,18 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "floatingisland",
+  "id": "ends",
   "version": "${version}",
-  "name": "Floating Island",
-  "description": "Toggleable layered floating island schematic.",
-  "authors": ["FloatingIsland"],
-  "environment": "*",
+  "name": "Ends",
+  "description": "1.21 Ghost Client",
+  "authors": ["Yurei"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ends/icon.png",
+  "environment": "client",
   "entrypoints": {
-    "main": ["com.floatingisland.FloatingIslandMod"],
-    "client": ["com.floatingisland.FloatingIslandClient"]
+    "client": [
+      "com.yurei.ends.Ends"
+    ]
   },
+  "mixins": [
+    "ends.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.15.11",
-    "minecraft": "1.21",
+    "minecraft": "~1.21",
     "java": ">=21",
     "fabric-api": "*"
   }
